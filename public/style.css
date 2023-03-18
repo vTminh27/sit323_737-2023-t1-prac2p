@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+} 
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.Header-image {
+    position: relative;
+    width: 100%;
+}
+
+.Header-image img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+
+.Header-image .image-overlay {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.profile-pic {
+    text-align: center;
+    line-height: 30px;
+    padding-top: 50px;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.profile-pic p {
+    color: rgb(187, 187, 235);
+    font-size: 20px;
+}
+
+/*Line divider*/
+.divider {
+    height: 2px;
+    width: 220px;
+    background-color: rgb(165, 138, 190);
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.line {
+    text-align: center;
+}
+
+/*Mobile Development*/
+.achieve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achieve .mobile_img img {
+    max-width: 90%;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+.mobile_img {
+    flex-basis: 35%;
+}
+
+.achieve .content {
+    margin-left: -10px;
+}
+
+
+/*My Photo*/
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.container1 img {
+    width: 300px;
+    margin: 10px 10px;
+}
